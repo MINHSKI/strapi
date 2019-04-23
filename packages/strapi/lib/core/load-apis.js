@@ -29,7 +29,7 @@ const loadLocalApis = appPath =>
 const loadAdminApis = () =>
   loadFiles(
     findPackagePath('strapi-admin'),
-    '!(config|node_modules|scripts)//*.*(js|json)'
+    '!(config|node_modules|scripts|build)//*.*(js|json)'
   );
 
 const loadLocalPluginsApis = appPath =>
